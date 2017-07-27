@@ -1,0 +1,43 @@
+.features {
+  &__header {
+    color: $c_pomegranate;
+  }
+
+  &__description {
+    @include inner-container;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    flex-basis: 24%;
+    margin-right: 1%;
+    margin-bottom: 50px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  &__caption {
+    margin-top: 15px;
+
+    color: $c_pomegranate;
+    text-decoration: underline;
+    text-align: center;
+
+    font-size: 24px;
+    line-height: 24px;
+    font-family: $f_roboto;
+    font-weight: 900;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}

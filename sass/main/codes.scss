@@ -1,0 +1,44 @@
+.codes {
+  padding-bottom: 40px;
+  padding-top: 50px;
+
+  background-color: $c_mercury;
+  background-image: url('../img/principes.jpg');
+  background-size: cover;
+  color: #fff;
+
+  &__header {
+    color: $c_tuquoise;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    counter-reset: itemCounter;
+    max-width: 765px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    position: relative;
+    list-style: none;
+    padding-left: 36px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      counter-increment: itemCounter;
+      content: counter(itemCounter) "."; 
+      position: absolute;
+      left: -20px;
+
+      color: $c_tuquoise;
+      font-family: $f_slab;
+      font-size: 36px;
+      line-height: 1.5;
+      font-weight: 600;
+    }
+  }
+}

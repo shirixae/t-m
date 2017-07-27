@@ -1,0 +1,81 @@
+.footer {
+  display: flex;
+  padding-top: 15px;
+  background-image: linear-gradient(180deg, #ededed 0%, #fff 25%, #fff);
+
+  &__column {
+    &--left {
+      flex-grow: 0;
+    }
+    &--right {
+      margin-left: auto;
+      text-align: right;   
+    }
+  }
+
+  &__header {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: $f_slab;
+    font-weight: 600;
+
+    &--company {
+      color: $c_pomegranate;
+    }
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+
+  &__link {
+    color: $c_dovegrey;
+
+    &--main {
+      display: inline-block;
+      margin-bottom: 35px;
+      color: #000;
+    }
+  }
+
+  &__list {
+    @include no-list;
+    margin-right: 70px;
+    font-size: 18px;
+    line-height: 30px;
+    font-family: $f_cond;
+
+    &--contacts {
+      margin-right: 0;
+    }
+  }
+
+  &__inner-list {
+    @include no-list;
+  }
+
+  &__call {
+    color: $c_pomegranate;
+    text-decoration: underline;
+  }
+
+  &__copyright {
+    font-family: $f_cond;
+  }
+
+  &__contacts {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: $f_cond;
+  }
+
+  &__contacts-title {
+    color: #000;
+    margin-bottom: 35px;
+  }
+
+  &__contacts-address {
+    max-width: 250px;
+  }
+}

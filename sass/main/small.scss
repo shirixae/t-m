@@ -1,0 +1,40 @@
+.small {
+  background-color: $c_onyx;
+  background-image: url('../img/calculator.jpg');
+  background-size: cover;
+
+  &__header {
+    color: $c_pomegranate;
+  }
+
+  &__paragraph {
+    color: #fff;
+
+    &.-last {
+      margin-bottom: 0;
+    }
+  }
+
+  &__wrapper {
+    @include inner-container;
+    display: flex;
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    // padding: 0 20px;
+
+    &--left {
+      margin-right: 40px;
+    }
+  }
+
+  &__btn {
+    margin-top: 45px;
+  }
+}
+
+

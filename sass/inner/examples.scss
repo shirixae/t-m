@@ -1,0 +1,112 @@
+.examples {
+  position: relative;
+  padding-bottom: 50px;
+  background-color: $c_onyx;
+
+  &__wrapper {
+    @include inner-container;
+  }
+  
+  &__header {
+    color: $c_pomegranate;
+  }
+
+  &__arrows {
+
+  }
+
+ &__arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+
+    background-image: url('../img/arrows/orange-normal.svg');
+    background-size: cover;
+
+    &:hover {
+      background-image: url('../img/arrows/orange-hover.svg');
+    }
+
+    &:active {
+      background-image: url('../img/arrows/orange-down.svg');
+    }
+
+    &--left {
+      left: 20px;
+    }
+
+    &--right {
+      right: 20px;
+      transform: rotate(180deg);
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__point {
+    display: block;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    li button {
+      height: 15px;
+      width: 45px;
+
+      background-color: $c_pomegranate;
+
+      font-size: 0;
+      cursor: pointer;
+      outline: 0;
+    }
+
+  }
+
+  .slick-active button {
+    background-color: $c_yellow;
+  }
+
+  &__inner {
+    @include inner-container;
+    position: relative;
+  }
+
+  &__item {
+
+  }
+
+  &__item-content {
+
+  }
+
+  &__item-img {
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__item-caption {
+    margin-top: 40px;
+    text-align: center;
+  }
+
+}

@@ -1,0 +1,49 @@
+.special {
+  padding-top: 60px;
+  padding-bottom: 45px;
+  background-image: url('../img/neoclassics.jpg');
+  background-size: cover;
+
+  color: #fff;
+
+  &__wrapper {
+    @include inner-container;
+  }
+
+  &__item {
+    margin-bottom: 60px;
+  }
+
+  &__header {
+    color: $c_veronica;
+    margin-bottom: 40px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__frame {
+    margin-right: 100px;
+    background-color: $c_alabaster;
+    padding: 30px 10px 10px 30px;
+    border: 20px solid $c_veronica;
+  }
+
+  &__description {
+    width: 115%;
+    color: $c_veronica;
+    background-color: $c_alabaster;
+  }
+
+  &__btn {
+    background-color: $c_veronica;
+  }
+
+  &__call {
+    margin-bottom: 40px;
+    color: $c_tuquoise;
+  }
+
+}

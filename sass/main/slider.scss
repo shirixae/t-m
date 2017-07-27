@@ -1,0 +1,84 @@
+.slider {
+  position: relative;
+  display: flex;
+
+  background-color: #000;
+  color: $c_dovegrey;
+
+  &__controls {
+
+  }
+
+  &__arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+
+    background-image: url('../img/arrows/orange-normal.svg');
+    background-size: cover;
+
+    &:hover {
+      background-image: url('../img/arrows/orange-hover.svg');
+    }
+
+    &:active {
+      background-image: url('../img/arrows/orange-down.svg');
+    }
+
+    &--left {
+      left: 20px;
+    }
+
+    &--right {
+      right: 20px;
+      transform: rotate(180deg);
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__inner {
+    @include inner-container;
+  }
+
+  &__item-content {
+    display: flex;
+  }
+
+  &__item-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__item-img {
+    margin-right: 30px;
+    line-height: 0;
+    font-size: 0;
+  }
+
+  &__paragrapgh {
+    font-size: 18px;
+  }
+
+  &__header {
+    margin: 0;
+    margin-bottom: 30px;
+    color: #fff;
+    font-family: $f_slab;
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+}

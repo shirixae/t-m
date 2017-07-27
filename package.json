@@ -1,0 +1,27 @@
+{
+  "name": "trend-media",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "grunt pug && grunt sass && grunt serve"
+  },
+  "author": "Alexandra Godun",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-pug": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-modernizr": "^1.0.2",
+    "grunt-postcss": "^0.8.0",
+    "grunt-sass": "^2.0.0",
+    "pug": "^2.0.0-rc.2",
+    "sass": "^1.0.0-beta.1"
+  }
+}

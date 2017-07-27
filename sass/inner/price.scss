@@ -1,0 +1,38 @@
+.price {
+  background-image: url('../img/price.jpg');
+  background-size: cover;
+
+  &__wrapper {
+    @include inner-container;
+  }
+
+  &__prices {
+    @include no-list;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    color: $c_eucalyptus;
+    margin-bottom: 20px;
+    text-align: center;
+
+    font-family: $f_slab;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 600;
+
+    &--custom {
+      color: $c_veronica;
+    }
+  }
+
+  &__description {
+    text-align: center;
+    &--custom {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.order {
+  background-image: url('../img/contacts.jpg');
+  background-size: cover;
+
+  color: $c_mercury;
+
+  &__wrapper {
+    @include inner-container;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__col {
+    flex: 1 0 50%;
+
+    &--right {
+      flex: 1 0 auto;
+      margin-left: auto;
+      position: relative;
+      min-width: 350px;
+    }
+  }
+
+  &__address {
+    max-width: 450px;
+  }
+}

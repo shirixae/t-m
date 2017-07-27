@@ -1,0 +1,55 @@
+.intro {
+  // height: 90vh;
+  // min-height: 600px;
+  box-sizing: border-box;
+
+  padding-top: 200px;
+  padding-bottom: 35px;
+  
+  background-color: #783112;
+  background-image: url('../img/headerOffice.jpg');
+  background-size: cover;
+
+  &__description  {
+    max-width: 500px;
+    text-align: center;    
+    margin: 0 auto;
+  }
+
+  &__description-sign,
+  &__description-text {
+    margin-bottom: 30px;
+    
+    text-align: left;
+    font-family: $f_roboto;
+    font-size: 18px;
+    line-height: 1.5;
+
+    color: #000;
+  }
+
+  &__description-sign {
+    text-align: right;
+    margin-bottom: 50px;
+  }
+
+  &__btn {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  &__company {
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  &__company-text {
+    color: #000;
+    &.-s {
+      font-size: 15px;
+    }
+    &.-m {
+      font-size: 30px;
+    }
+  }
+}

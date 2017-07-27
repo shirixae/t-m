@@ -1,0 +1,74 @@
+.how {
+  // padding-top: 70px;
+
+  background-image: url('../img/indoor.jpg');
+  background-size: cover;
+
+  color: $c_mercury;
+
+  &__wrapper {
+    @include inner-container;
+  }
+
+  &__header {
+    margin-bottom: 40px;
+    color: $c_badass;
+  }
+
+  &__description {
+    color: $c_mercury;
+  }
+  
+  &__paragraph {
+    margin-bottom: 30px;
+  }
+
+  &__quot {
+    display: flex;
+  }
+
+  &__photo {
+    flex: 0 0 105px;
+    height: 105px;
+    margin-right: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__author {
+    flex: 0 0 auto;
+    margin-right: 30px;
+    margin-left: auto;
+  }
+
+  &__name {
+    margin: 0;
+
+    font-family: $f_slab;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 23px;
+    color: #fff;
+  }
+
+  &__post {
+    margin: 0;
+
+    font-family: $f_slab;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  &__btn {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+}

@@ -1,0 +1,60 @@
+.address {
+  background-color: #ede6d0;
+  background-image: url('../img/contactsBright.jpg');
+  background-size: cover;
+
+  position: relative;
+  overflow: hidden;
+
+  &__wrapper {
+    @include inner-container;
+  }
+
+  &__header {
+    color: $c_pomegranate;
+  }
+
+  &__content {
+    width: 50%;
+    max-width: 450px;
+  }
+
+  &__def {
+    margin-bottom: 10px;
+    color: $c_pomegranate;
+    font-family: $f_slab;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  &__tel {
+    color: $c_pomegranate;
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: 40px;
+
+    sup {
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    margin-left: 50px;
+  }
+}
+
+#map {
+  content: '';
+  position: absolute;
+  bottom: -70px;
+  right: -70px;
+  display: block;
+  width: 700px;
+  height: 700px;
+  // background-color: red;
+
+  clip-path: circle(50% at 50% 50%);
+  // filter: blur(20px);
+}

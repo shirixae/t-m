@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    title Trend Media
+    link(rel="stylesheet", href="css/style.css")
+    link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab:400,700|Roboto:400,900&amp;subset=cyrillic" rel="stylesheet")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    script(type="text/javascript" src="scripts/libs/jquery-3.1.0.min.js")
+    script(type="text/javascript" src="scripts/libs/slick.min.js")
+    script(type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMy9k8DEYRXfCXlqxpaXKmC8ntKAKk3kY")
+    script(type="text/javascript" src="scripts/main.js")
+
+  body
+    include common/header.pug 
+    include main/intro.pug
+    include main/features.pug
+    include main/special.pug
+    include main/trust.pug
+    include main/slider.pug
+    include main/small.pug
+    include main/stats.pug
+    include main/codes.pug
+    include main/team.pug
+    include main/address.pug
+    include common/footer.pug
+
+    block scripts

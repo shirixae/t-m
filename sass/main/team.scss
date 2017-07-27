@@ -1,0 +1,97 @@
+.team {
+  background-color: $c_jaguar;
+  color: #b0b0b0;
+
+  &__wrapper {
+    @include inner-container;
+  }
+
+  &__header {
+    color: $c_tuquoise;
+    margin-bottom: 40px;
+  }
+
+  &__paragraph {
+    margin-bottom: 60px;
+  }
+
+  &__cards {
+    &--s {
+      display: flex;
+      flex-wrap: wrap;
+
+      margin-left: -50px;
+    }
+  }
+
+
+  &__card {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    &--l {
+      margin-bottom: 50px;
+    }
+
+    &--s {
+      max-width: none;
+      flex-basis: 49%;
+
+      &:nth-child(2n + 1) {
+        margin-right: 2%;
+      }
+      
+      &:nth-child(9),
+      &:nth-child(10) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+
+  &__card-photo {
+    flex: 0 0 105px;
+    height: 105px;
+    margin-right: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &--l {
+      flex: 0 0 210px;
+      height: 210px;
+    }
+
+    & img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__card-bio {
+
+  }
+
+  &__card-name {
+    margin: 0;
+    font-family: $f_slab;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 23px;
+    color: #fff;
+  }
+
+  &__card-post {
+    margin-bottom: 15px;
+    font-family: $f_slab;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  &__card-desc {
+
+  }
+}

@@ -1,0 +1,16 @@
+.trust {
+  background-color: $c_onyx;
+
+  &__wrapper {
+    @include inner-container;
+  }
+  
+  &__header {
+    color: $c_pomegranate;
+  }
+
+  &__paragraph {
+    color: $c_dovegrey;
+  }
+}
+

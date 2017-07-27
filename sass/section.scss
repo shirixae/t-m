@@ -1,0 +1,26 @@
+.section {
+  @include side;
+
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 50px;
+
+  &__header {
+    color: $c_pomegranate;
+    margin-bottom: 30px;
+    text-align: center;
+
+    font-family: $f_slab;
+    font-size: 36px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+
+  &__paragraph {
+    margin-bottom: 20px;
+
+    font-family: $f_roboto;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}

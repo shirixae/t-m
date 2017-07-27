@@ -1,0 +1,105 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 15px;
+  justify-content: space-between;
+
+  &__map {
+    outline: none;
+  }
+
+  /* Firefox doesn't like flex on button so I've put everything in a div */
+  &__map div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__map-block {
+    width: 35px;
+    height: 33px;
+    background-image: url('../img/map-normal.svg');
+    background-size: cover;
+  }
+
+  &__map:hover &__map-block {
+    background-image: url('../img/map-hover.svg');
+  }
+
+  &__map:active &__map-block {
+    background-image: url('../img/map-active.svg');
+  }
+
+  &__map-text {
+    width: 70px;
+    padding-left: 10px;
+    margin-top: -3px;
+    text-align: left;
+
+    font-size: 15px;
+    font-family: $f_slab;
+    line-height: 19px;
+  }
+
+
+  &__map div:hover &__map-text {
+    color: $c_yellow;
+  }
+
+  &__map div:active &__map-text {
+    color: $c_pomegranate;
+  }
+
+  &__logo {
+    flex-grow: 3;
+    color: $c_pomegranate;
+    font-size: 45px;
+    font-family: $f_slab;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  &__phone {
+    font-size: 30px;
+    font-family: $f_slab;
+    line-height: 30px;
+
+    & a {
+      color: $c_dovegrey;
+    }
+  }
+
+  &__sitemap {
+    position: absolute;
+    top: 85px;
+    left: 0;
+    visibility: hidden;
+
+    padding: 40px  30px 40px 0px;
+
+    background-color: $c_jaguar;
+
+    &.-active {
+      visibility: visible;
+    }
+  }
+
+  &__list {
+    @include no-list;
+    margin-left: 30px;
+  }
+
+  &__link {
+    font-family: $f_cond;
+    font-size: 18px;
+    line-height: 36px;
+    color: $c_dovegrey;
+
+    &:hover {
+      color: $c_pomegranate;
+    }
+  }
+}
+

@@ -1,0 +1,43 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin side {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@mixin no-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin container {
+  min-width: 900px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@mixin inner-container {
+  min-width: 800px;
+  width: 82.5%;
+  margin: 0 auto;
+}
+
+@mixin container-fluid {
+  width: auto;
+  min-width: 300px;
+  margin: 0 auto;
+
+  @media ($tablet-width) {
+    padding: 0;
+    width: 84%;
+    max-width: 939px;
+    margin: 0 auto;
+  }
+}

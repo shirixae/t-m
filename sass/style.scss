@@ -1,0 +1,48 @@
+@import 'variables';
+@import 'mixins';
+@import 'normalize';
+@import 'controlls';
+@import 'section';
+
+@import 'common/header';
+@import 'common/footer';
+
+@import 'main/intro';
+@import 'main/features';
+@import 'main/special';
+@import 'main/classic';
+@import 'main/trust';
+@import 'main/small';
+@import 'main/slider';
+@import 'main/stats';
+@import 'main/codes';
+@import 'main/team';
+@import 'main/address';
+
+@import 'inner/how';
+@import 'inner/case';
+@import 'inner/examples';
+@import 'inner/price';
+@import 'inner/order';
+
+@import 'slick/slick';
+@import 'slick/slick-theme';
+
+
+
+body {
+  /* TODO: remove me when mobile version os ready*/
+  min-width: 900px;
+
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: $f_roboto;
+  color: $c_dovegrey;
+  font-style: normal;
+
+  background-color: $c_alabaster;
+
+  a {
+    text-decoration: none;
+  }
+}

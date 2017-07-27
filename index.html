@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trend Media</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab:400,700|Roboto:400,900&amp;amp;subset=cyrillic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="scripts/libs/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="scripts/libs/slick.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAMy9k8DEYRXfCXlqxpaXKmC8ntKAKk3kY"></script>
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <button class="header__map">
+        <div>
+          <div class="header__map-block"></div>
+          <div class="header__map-text">карта сайта</div>
+        </div>
+      </button>
+      <h2 class="header__logo">Trend Media</h2>
+      <div class="header__phone"><a href="tel:+78124907608"> 
+          <nobr>+7 812 490-76-08</nobr></a></div>
+      <nav class="header__sitemap">
+        <ul class="header__list">
+          <li><a class="header__link" href="#">Главная</a></li>
+          <li><a class="header__link" href="#features">Направления работы</a></li>
+          <li>
+            <ul class="header__list">
+              <li><a class="header__link" href="/inner.html">Oudtoor-реклама</a></li>
+              <li><a class="header__link" href="/inner.html">Indoor-реклама и&nbsp;лифты</a></li>
+              <li><a class="header__link" href="/inner.html">BTL и&nbsp;рассылки</a></li>
+              <li><a class="header__link" href="/inner.html">Реклама в&nbsp;интернете</a></li>
+              <li><a class="header__link" href="/inner.html">Спецпроекты</a></li>
+              <li><a class="header__link" href="/inner.html">Работа со&nbsp;СМИ</a></li>
+              <li><a class="header__link" href="/inner.html">Реклама в&nbsp;метро</a></li>
+              <li><a class="header__link" href="/inner.html">Реклама на&nbsp;транспорте</a></li>
+            </ul>
+            <li><a class="header__link" href="#slider">Портфолио</a></li>
+            <li><a class="header__link" href="#small">Малому бизнесу</a></li>
+            <li><a class="header__link" href="#stats">Статистика</a></li>
+            <li><a class="header__link" href="#codes">Принципы</a></li>
+            <li><a class="header__link" href="#team">Команда</a></li>
+            <li><a class="header__link" href="#address">Контакты</a></li>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section intro">
+      <div class="intro__description">
+        <p class="intro__description-text">
+          Здесь нет офферов и&nbsp;предложений, но&nbsp;мы&nbsp;знаем что это и&nbsp;искренне верим в&nbsp;концепцию 
+          &laquo;довольный клиент&nbsp;&mdash; это постоянный клиент&raquo;. От&nbsp;успеха вашей рекламной кампании напрямую 
+          зависит и&nbsp;наш. Если где-то надо приложить больше усилий, чем обычно&nbsp;&mdash; мы&nbsp;делаем 
+          это с&nbsp;любовью к&nbsp;работе. 
+        </p>
+        <p class="intro__description-sign">Ваши Trend Media.</p>
+        <button class="btn intro__btn">Гибкие рекламные кампании</button><a class="intro__company" href="#address">
+          <p class="intro__company-text -m">Агентство «Trend Media»</p>
+          <p class="intro__company-text -s">Санкт-Петербург, Московский проспект 212, офис 5099</p>
+          <p class="intro__company-text -m">+7 812 490-76-08</p></a>
+      </div>
+    </section>
+    <section class="section features" id="features">
+      <h2 class="section__header features__header">Наши главные направления работы</h2>
+      <div class="features__description">
+        <p class="section__paragraph features__paragraph">
+          Эффективность рекламной кампании во&nbsp;многом зависит от&nbsp;правильного выбора носителя. 
+          Не&nbsp;всем товарам подходит тот или иной вид размещения, так как они действуют по-разному 
+          и&nbsp;имеют свои профили по&nbsp;целевой аудитории и&nbsp;конверсии.
+        </p>
+        <p class="section__paragraph features__paragraph">
+          Мы&nbsp;провели более 1200 рекламных кампаний в&nbsp;самых разных областях и&nbsp;умеем 
+          работать со&nbsp;всеми популярными направлениями. Что именно из&nbsp;рекламы вас интересует?
+        </p>
+      </div>
+      <div class="features__items">
+        <figure class="features__item"><img class="features__img" src="img/feature-indoor.jpg" alt="indoor реклама" height="280" width="280">
+          <figcaption class="features__caption">indoor</figcaption>
+        </figure>
+        <figure class="features__item"><img class="features__img" src="img/feature-outdoor.jpg" alt="outdoor реклама" height="280" width="280">
+          <figcaption class="features__caption">outdoor</figcaption>
+        </figure>
+        <figure class="features__item"><img class="features__img" src="img/feature-btl.jpg" alt="BTL и рассылки" height="280" width="280">
+          <figcaption class="features__caption">BTL и рассылки</figcaption>
+        </figure>
+        <figure class="features__item"><img class="features__img" src="img/feature-internet.jpg" alt="реклама в интернете" height="280" width="280">
+          <figcaption class="features__caption">интернет</figcaption>
+        </figure>
+        <figure class="features__item"><img class="features__img" src="img/feature-metro.jpg" alt="реклама в метрополитене" height="280" width="280">
+          <figcaption class="features__caption">метрополитен</figcaption>
+        </figure>
+        <figure class="features__item"><img class="features__img" src="img/feature-transport.jpg" alt="реклама в транспорте" height="280" width="280">
+          <figcaption class="features__caption">транспорт</figcaption>
+        </figure>
+        <figure class="features__item"><img class="features__img" src="img/feature-media.jpg" alt="реклама в СМИ" height="280" width="280">
+          <figcaption class="features__caption">СМИ</figcaption>
+        </figure>
+        <figure class="features__item"><img class="features__img" src="img/feature-special.jpg" alt="спецпроекты" height="280" width="280">
+          <figcaption class="features__caption">спецпроекты</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="special">
+      <div class="special__wrapper">
+        <div class="special__item">
+          <h2 class="section__header special__header">Мы&nbsp;не&nbsp;стесняемся выходить за&nbsp;рамки обыденности</h2>
+          <div class="special__frame">
+            <div class="special__description">
+              <p class="section__paragraph special__paragraph">
+                Для лаборатории Helix мы&nbsp;подготовили брендированную зону в&nbsp;детском центре 
+                &laquo;Кидбург&raquo;: детишки знакомились с&nbsp;различными профессиями, пробуя себя 
+                в&nbsp;той или иной роли.
+              </p>
+              <p class="section__paragraph special__paragraph">
+                Главным испытанием стала медицинская лаборатория, в&nbsp;которой малыши могли 
+                попрактиковаться в&nbsp;заборе крови: задача осложнялась тем, что заказчик явно запретил 
+                любые ассоциации с&nbsp;человеческим телом и&nbsp;иглами/шприцами.
+              </p>
+              <p class="section__paragraph special__paragraph">
+                Пациентом стал полутораметровый плюшевый медведь, внутри которого сделали легкообслуживаемую 
+                &laquo;кровеносную систему&raquo;. Вместо шприца использовали вакуумную пробирку: ребёнок 
+                садился рядом с&nbsp;Мишкой, вставлял её&nbsp;в&nbsp;специальное место на&nbsp;лапе, 
+                и&nbsp;&laquo;кровь&raquo; сама наполняла сосуд.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="special__item">
+          <h2 class="section__header">И&nbsp;при этом уважаем классику</h2>
+          <p class="section__paragraph">
+            Нестанадртные решения&nbsp;&mdash; это круто, но&nbsp;зачастую можно обойтись простыми 
+            и&nbsp;проверенными решениями. Только не&nbsp;подумайте, что банальную &laquo;наружку&raquo; можно 
+            заказать где попало и&nbsp;разницы не&nbsp;будет. Будет, и&nbsp;ещё какая.
+          </p>
+          <p class="section__paragraph">
+            Все производственные процессы, начиная с&nbsp;создания макета и&nbsp;заканчивая составлением 
+            отчётов находятся под плотным контролем опытных менеджеров. Мы&nbsp;работаем только с&nbsp;проверенными 
+            исполнителями и&nbsp;ревностно относимся к&nbsp;качеству предоставляемых услуг, поэтому 
+            не&nbsp;срываем сроки, не&nbsp;раздуваем бюджеты и&nbsp;быстро решаем любые возникающие проблемы.
+          </p>
+        </div>
+        <div class="special__item"> 
+          <h2 class="section__header special__call">Уже знаете, какой формат вам подходит больше?</h2>
+          <div class="special__content">
+            <button class="btn special__btn">Мне нужно нечто особенное</button>
+            <button class="btn">Обойдёмся проверенными решениями</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section trust">
+      <div class="trust__wrapper">
+        <h2 class="section__header trust__header">Нам доверяют свою репутацию</h2>
+        <p class="section__paragraph trust__paragraph">
+          В&nbsp;современном мире любое неосторожное действие, любая мелочь могут стоить вам&nbsp;&mdash; 
+          карьеры, а&nbsp;фирме&nbsp;&mdash; репутации, которую зарабатывали многие годы. 
+          Мы&nbsp;работаем очень аккуратно и&nbsp;не&nbsp;подставляем клиентов под удар: даже 
+          провокационная реклама может быть яркой и&nbsp;не&nbsp;пошлой одновременно.
+        </p>
+        <p class="section__paragraph trust__paragraph">
+          Посмотрите на&nbsp;реализованные нами проекты. Они все разные по&nbsp;концепции, 
+          сложности и&nbsp;применяемым методикам. Во&nbsp;всех случаях клиенты остались довольны.
+        </p>
+      </div>
+    </section>
+    <section class="section slider" id="slider">
+      <div class="slider__controls">
+        <button class="slider__arrow slider__arrow--left"></button>
+        <button class="slider__arrow slider__arrow--right"></button>
+      </div>
+      <div class="slider__inner">
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__item-col slider__item-col--left">
+              <div class="slider__item-img"><img src="./img/binbank.jpg" height="280" width="280"></div>
+            </div>
+            <div class="slider__item-col slider__item-col--right">
+              <h3 class="slider__header">Сувениры для &laquo;БинБанка&raquo;</h3>
+              <p class="slider__paragrapgh">
+                В&nbsp;ходе производства сувенирной продукции очень часто приходится решать сложные 
+                задачи по&nbsp;размещению срочных заказов и&nbsp;обеспечению логистики. 
+                Компания &laquo;БинБанк&raquo; хотела изготовить два набора кружек трёх цветов: 
+                непосредственно для банка и&nbsp;для кредитных систем. Помимо изготовления на&nbsp;нас 
+                легла и&nbsp;доставка различных наборов из&nbsp;1600 экземпляров в&nbsp;каждое 
+                из&nbsp;18&nbsp;отделений.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__item-col slider__item-col--left">
+              <div class="slider__item-img"><img src="./img/binbank.jpg" height="280" width="280"></div>
+            </div>
+            <div class="slider__item-col slider__item-col--right">
+              <h3 class="slider__header">Срочное размещение &laquo;Карусели&raquo; в&nbsp;лифтах</h3>
+              <p class="slider__paragrapgh">
+                У&nbsp;лифтовой рекламы есть одна особенность: все клиентские макеты (а&nbsp;их&nbsp;может 
+                быть много, не&nbsp;все выкупают большую площадь) верстаются в&nbsp;общий формат&nbsp;А1, 
+                который отправляется в&nbsp;типографию. Мы&nbsp;совершили настоящее чудо: договорились 
+                с&nbsp;подрядчиками во&nbsp;всех 37&nbsp;городах в&nbsp;3&nbsp;часовых поясах. Какие-то 
+                макеты успели переверстать, где-то информацию &laquo;Карусели&raquo; вклеивали в&nbsp;уже 
+                отпечатанный лист на&nbsp;свободное место. Так или иначе мы&nbsp;спасли рекламную кампанию 
+                и&nbsp;за&nbsp;два дня провернули&nbsp;то, что обычно занимает пару недель.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__item-col slider__item-col--left">
+              <div class="slider__item-img"><img src="./img/binbank.jpg" height="280" width="280"></div>
+            </div>
+            <div class="slider__item-col slider__item-col--right">
+              <h3 class="slider__header">Грамотный подход</h3>
+              <p class="slider__paragrapgh">
+                Клиент страстно желал разместить макет в&nbsp;центре города на&nbsp;сити-форматах, 
+                особенно разместиться на&nbsp;остановках общественного транспорта, чтобы реклама 
+                работала утром и&nbsp;вечером, но&nbsp;не&nbsp;учёл один фактор: ноябрьские вечера 
+                в&nbsp;Питере&nbsp;&mdash; это темнота, холод и&nbsp;сырость. В&nbsp;Большинстве 
+                случаев остановки не&nbsp;имеют освещения, и&nbsp;рекламная конструкция попросту 
+                остаётся без внимания&nbsp;&mdash; люди впиваются глазами в&nbsp;проходящий транспорт, 
+                чтобы скорее оказаться дома. Наш опыт позволил показать слабые моменты предложенной 
+                концепции, предложить более актуальные варианты и&nbsp;спасти рекламную кампанию.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__item-col slider__item-col--left">
+              <div class="slider__item-img"><img src="./img/binbank.jpg" height="280" width="280"></div>
+            </div>
+            <div class="slider__item-col slider__item-col--right">
+              <h3 class="slider__header">Маркетинговые исследования и&nbsp;контрольные закупки</h3>
+              <p class="slider__paragrapgh">
+                Наши специалисты буквально спасли один известный автосалон, менеджер которого 
+                организовал мошенническую схему по&nbsp;уводу клиентов и&nbsp;выписывание себе 
+                бонусов. Контрольная закупка вывела на&nbsp;чистую воду злоумышленника 
+                и&nbsp;подельников, которые получили реальные сроки. Клиенты автосалона больше 
+                не&nbsp;имеют проблем с&nbsp;гарантийным обслуживанием, а&nbsp;салон&nbsp;&mdash; 
+                с&nbsp;репутацией и&nbsp;продажами.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__item-col slider__item-col--left">
+              <div class="slider__item-img"><img src="./img/binbank.jpg" height="280" width="280"></div>
+            </div>
+            <div class="slider__item-col slider__item-col--right">
+              <h3 class="slider__header">Быстрые рассылки</h3>
+              <p class="slider__paragrapgh">
+                Не&nbsp;так давно у&nbsp;лабораторной службы Helix проходила акция в&nbsp;25&nbsp;городах 
+                (начиная с&nbsp;СЗФО и&nbsp;заканчивая Уралом). В&nbsp;качестве способа оповещения были 
+                выбраны почтовые ящики и&nbsp;подробные буклеты в&nbsp;ДЦ. С&nbsp;виду всё просто, 
+                но&nbsp;дъявол-то кроется в&nbsp;деталях. В&nbsp;каждом городе свой макет, который 
+                надо сдать в&nbsp;типографию, отпечатать, а&nbsp;затем распространить&nbsp;&mdash; 
+                без налаженной логистики и&nbsp;партнёрских отношений со&nbsp;многими фирмами реализовать 
+                подобный проект можно за&nbsp;месяц с&nbsp;небольшим, мы&nbsp;же справились 
+                за&nbsp;6&nbsp;дней.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__item-col slider__item-col--left">
+              <div class="slider__item-img"><img src="./img/binbank.jpg" height="280" width="280"></div>
+            </div>
+            <div class="slider__item-col slider__item-col--right">
+              <h3 class="slider__header">Драйвер роста</h3>
+              <p class="slider__paragrapgh">
+                Грамотное применение принципа перемещения потоков аудитории на&nbsp;общественном 
+                транспорте помогло нашему клиенту, клубу &laquo;Барвиха&raquo; провести удачную 
+                экспансию. Изначально рекламу давали только внутри Невского района, в&nbsp;котором 
+                размещён клуб. Когда эффективность локального размещения снизилась, мы&nbsp;предложили 
+                использовать рекламу в&nbsp;общественном транспорте, следующем в&nbsp;правильных 
+                направлениях. В&nbsp;результате&nbsp;&mdash; моментальный наплыв посетителей 
+                из&nbsp;других районов и&nbsp;отдалённых уголков Невского.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item">
+          <div class="slider__item-content">
+            <div class="slider__item-col slider__item-col--left">
+              <div class="slider__item-img"><img src="./img/binbank.jpg" height="280" width="280"></div>
+            </div>
+            <div class="slider__item-col slider__item-col--right">
+              <h3 class="slider__header">История &laquo;Nickelodeon&raquo;</h3>
+              <p class="slider__paragrapgh">
+                Наши специалисты помогли найти новую аудиторию ТВ-каналу Nickelodeon... 
+                На&nbsp;радио! Мы&nbsp;провели исследование по&nbsp;четырем показателям 
+                (Reach, Frequency, Affinity Index, CPT) и&nbsp;выбрали наиболее подходящие 
+                радиостанции в&nbsp;12&nbsp;городах. Подобрали идеально сбалансированную схему 
+                по&nbsp;стоимости и&nbsp;повторяемости, и&nbsp;запустили проект. Эффект 
+                не&nbsp;заставил себя ждать, довольный клиент, ещё одна страница с&nbsp;успешной 
+                рекламной кампанией в&nbsp;нашем портфолио.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section small" id="small">
+      <h2 class="section__header small__header">Эффективная реклама для малого бизнеса</h2>
+      <div class="small__wrapper">
+        <div class="small__column small__column--left">
+          <p class="section__paragraph small__paragraph">У&nbsp;крупной фирмы всегда найдутся средства на&nbsp;большую рекламную кампанию, а&nbsp;что делать частным предпренимателям, небольшим стартапам и&nbsp;всем тем, у&nbsp;кого нет лишних пары миллионов на&nbsp;раскрутку?</p>
+          <p class="section__paragraph small__paragraph">Правильный ответ&nbsp;&mdash; выбрать наиболее эффективный канал распространения информации. То&nbsp;есть вы&nbsp;попали на&nbsp;правильный сайт.</p>
+          <p class="section__paragraph small__paragraph -last">У&nbsp;нас работаютс лучшие специалисты в&nbsp;городе. Проанализировать бизнес, целевую аудиторию, сам продукт и&nbsp;предложить идеальный рецепт рекламной кампании для нас&nbsp;&mdash; дело чести.</p>
+        </div>
+        <div class="small__column small__column--right">
+          <p class="section__paragraph small__paragraph">Почему нам так важны даже скромные заказы? Всё просто. Большая часть наших постоянных клиентов сперва заказали у&nbsp;нас что-то на&nbsp;пробу и&nbsp;остались довольны результатом.</p>
+          <p class="section__paragraph small__paragraph -last">Совместными усилиями малый бизнес может превратиться в&nbsp;средний, а&nbsp;тот&nbsp;&mdash; в&nbsp;крупный. Бюджеты вырастут, а&nbsp;налаженные связи, скидки и&nbsp;бонусы останутся.Это выгодно и&nbsp;нам, и&nbsp;вам.</p>
+          <button class="btn small__btn">Хочу эффективную рекламную кампанию!</button>
+        </div>
+      </div>
+    </section>
+    <section class="section stats" id="stats">
+      <h2 class="section__header stats__header">Меньше слов, больше цифр</h2>
+      <p class="section__paragraph stats__paragraph">
+        Хотите объективных данных? Их&nbsp;есть у&nbsp;нас! Мы&nbsp;ведём тщательный учёт всего, 
+        что связано с&nbsp;нашей деятельностью и&nbsp;с&nbsp;радостью поделимся с&nbsp;вами той 
+        информацией, за&nbsp;которую не&nbsp;придётся никого убивать. :)
+      </p>
+      <ul class="stats__list-l">
+        <li class="stats__item-l">
+          <div class="stats__figures-l">163</div>
+          <p class="stats__description-l">города охватывают наши рекламные площади</p>
+        </li>
+        <li class="stats__item-l">
+          <div class="stats__figures-l">37</div>
+          <p class="stats__description-l">благодарственных писем от&nbsp;довольных клиентов</p>
+        </li>
+        <li class="stats__item-l">
+          <div class="stats__figures-l">139</div>
+          <p class="stats__description-l">успешно завершённых крупных проектов</p>
+        </li>
+      </ul>
+      <div class="stats__content">
+        <ul class="stats__list-s">
+          <li class="stats__item-s"><span class="stats__figures-s">172</span>
+            <p class="stats__description-s">Рекламных площадей в&nbsp;родном Санкт-Петербурге и&nbsp;Ленинградской области</p>
+          </li>
+          <li class="stats__item-s"><span class="stats__figures-s">86 531</span>
+            <p class="stats__description-s">Квадратный метр рекламных площадей в&nbsp;Санкт-Петербурге и&nbsp;городах-спутниках</p>
+          </li>
+          <li class="stats__item-s"><span class="stats__figures-s">6 500</span>
+            <p class="stats__description-s">Точек размещения рекламы проверяется ежемесячно нашими специалистами</p>
+          </li>
+        </ul>
+        <ul class="stats__list-s">
+          <li class="stats__item-s"><span class="stats__figures-s">> 800</span>
+            <p class="stats__description-s">Концепций рекламных кампаний и крупных макетов разработано за год</p>
+          </li>
+          <li class="stats__item-s"><span class="stats__figures-s">> 60</span>
+            <p class="stats__description-s">Чашек эспрессо ежедневно готовит офисная кофе-машина</p>
+          </li>
+          <li class="stats__item-s"><span class="stats__figures-s">14</span>
+            <p class="stats__description-s">Недовольных клиентов, сорванных контрактов и невыполненныхоьязательств</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="section codes" id="codes">
+      <h2 class="section__header codes__header">Пять принципов работы Trend Media</h2>
+      <ol class="codes__list">
+        <li class="codes__item">Выполнять заказы точно в&nbsp;срок. Ложка хороша к&nbsp;обеду, а&nbsp;рекламная кампания&nbsp;&mdash; в&nbsp;правильное время. Мы&nbsp;работаем с&nbsp;надёжными подрядчиками и&nbsp;всё успеваем;</li>
+        <li class="codes__item">Иметь &laquo;План&nbsp;Б&raquo; на&nbsp;случай непредвиденных ситуаций. Мы&nbsp;не&nbsp;зацикливаемся на&nbsp;партнёрстве с&nbsp;одним поставщиком услуг: диверсификация&nbsp;&mdash; залог надёжности;</li>
+        <li class="codes__item">Не&nbsp;делать бесполезного. Если клиент пришёл с&nbsp;плохой концепцией рекламной кампании, мы&nbsp;объясним её&nbsp;недостатки и&nbsp;предложим эффективную альтернативу;</li>
+        <li class="codes__item">Записывать важную информацию. Мы&nbsp;не&nbsp;забываем детали, перезваниваем вовремя и&nbsp;не&nbsp;опаздываем на&nbsp;встречи;</li>
+        <li class="codes__item">Готовить чужую рекламу как свою собственную. Довольный клиент придёт к&nbsp;нам ещё раз, иногда вместе с&nbsp;друзьями. Совмещаем приятное с&nbsp;полезным;</li>
+        <li class="codes__item">Всегда превосходить ожидания и делать больше: например, давать бонусы, когда это возможно. Согласитесь, всегда приятно получить небольшой подарок. Особенно если он будет приносить вам доход.</li>
+      </ol>
+    </section>
+    <section class="section team" id="team">
+      <div class="team__wrapper">
+        <h2 class="section__header team__header">Наша дружная команда</h2>
+        <p class="section__paragraph team__paragraph">
+          Мы&nbsp;не&nbsp;только собрали лучших специалистов со&nbsp;всего Петербурга, 
+          но&nbsp;и&nbsp;научили их&nbsp;работать вместе. Не&nbsp;то&nbsp;что&nbsp;бы они 
+          сильно отказывались, но, как говорится, добрым словом и&nbsp;премией можно добиться 
+          куда большего, чем просто добрым словом.
+        </p>
+        <h2 class="section__header team__header">Профессионалы своего дела</h2>
+        <div class="team__cards">
+          <div class="team__card team__card--l">
+            <div class="team__card-photo team__card-photo--l"><img src="img/team/semyannikov.jpg" width="210" height="210"></div>
+            <div class="team__card-bio">
+              <h3 class="team__card-name">Виктор Семянников,</h3>
+              <div class="team__card-post">руководитель отдела продаж</div>
+              <p class="team__card-desc">
+                Грамотно использовать деньги наших клиентов для проведение рекламных 
+                акций&nbsp;&mdash; полдела, не&nbsp;менее важно проконтролировать результат и&nbsp;убедиться, 
+                что всё выполнено в&nbsp;лучшем виде. Виктор отвечает за&nbsp;качество наших услуг, 
+                урегулирование любых проблем и&nbsp;развитие основных направлений.
+              </p>
+            </div>
+          </div>
+          <div class="team__cards team__cards--s">
+            <div class="team__card team__card--s">
+              <div class="team__card-photo"><img src="img/team/khamid.jpg" width="105" height="105"></div>
+              <div class="team__card-bio">
+                <h3 class="team__card-name">Наталья Хамидова, </h3>
+                <div class="team__card-post">менеджер проектов</div>
+                <p class="team__card-desc">
+                  Проложить грамотный маршрут от&nbsp;технического задания к&nbsp;результату&nbsp;&mdash; 
+                  это искусство. Выбрать правильные методы, найти лучших подрядчиков, организовать всё 
+                  в&nbsp;лучшем виде в&nbsp;сжатые сроки Наталья умеет лучше всех.
+                </p>
+              </div>
+            </div>
+            <div class="team__card team__card--s">
+              <div class="team__card-photo"><img src="img/team/astaf.jpg" width="105" height="105"></div>
+              <div class="team__card-bio">
+                <h3 class="team__card-name">Анна Астафьева,</h3>
+                <div class="team__card-post">юрист</div>
+                <p class="team__card-desc">
+                  Согласование макетов, улаживание правовых вопросов и&nbsp;прочие юридические 
+                  тонкости находятся в&nbsp;ведении Анны&nbsp;&mdash; человека, который отлично 
+                  знает все особенности рекламного делопроизводства и&nbsp;сопутствующих 
+                  законодательных норм.
+                </p>
+              </div>
+            </div>
+            <div class="team__card team__card--s">
+              <div class="team__card-photo"><img src="img/team/lisitz.jpg" width="105" height="105"></div>
+              <div class="team__card-bio">
+                <h3 class="team__card-name">Олеся Лисицкая,</h3>
+                <div class="team__card-post">менеджер проектов</div>
+                <p class="team__card-desc">
+                  Быстрый запуск, эффективные методы и&nbsp;умение быстро прикидывать бюджет 
+                  (и&nbsp;не&nbsp;вылезать за&nbsp;его рамки)&nbsp;&mdash; коронные приёмы Олеси. 
+                  Она превосходно чувствует потребности целевой аудитории и&nbsp;всегда находит 
+                  убедительные способы взаимодействия с&nbsp;вашими будущими клиентами.
+                </p>
+              </div>
+            </div>
+            <div class="team__card team__card--s">
+              <div class="team__card-photo"><img src="img/team/meleh.jpg" width="105" height="105"></div>
+              <div class="team__card-bio">
+                <h3 class="team__card-name">Екатерина Мелехина,</h3>
+                <div class="team__card-post">дизайнер</div>
+                <p class="team__card-desc">
+                  Менеджер проектов может придумать сколь угодно интересную концепцию или чудесный 
+                  формат, но&nbsp;без воплощения в&nbsp;реальности он&nbsp;ничего не&nbsp;принесёт. 
+                  Катя уже нашла общий язык с&nbsp;нашими генераторами идей и&nbsp;отлично понимает 
+                  их&nbsp;потребности, целевую аудиторию и&nbsp;требуемый результат. 
+                  За&nbsp;это мы&nbsp;её&nbsp;и&nbsp;ценим.
+                </p>
+              </div>
+            </div>
+            <div class="team__card team__card--s">
+              <div class="team__card-photo"><img src="img/team/knyaz.jpg" width="105" height="105"></div>
+              <div class="team__card-bio">
+                <h3 class="team__card-name">Дарья Князева,</h3>
+                <div class="team__card-post">менеджер проектов</div>
+                <p class="team__card-desc">
+                  Если обычные методы не&nbsp;помогают, и&nbsp;требуется интуитивный подход 
+                  к&nbsp;клиенту и&nbsp;его проблеме, в&nbsp;игру вступает Дарья. Она умеет 
+                  внимательно слушать, образно мыслить и&nbsp;адаптировать самые необычные концепции 
+                  к&nbsp;класссическим форматам.
+                </p>
+              </div>
+            </div>
+            <div class="team__card team__card--s">
+              <div class="team__card-photo"><img src="img/team/podolyan.jpg" width="105" height="105"></div>
+              <div class="team__card-bio">
+                <h3 class="team__card-name">Владислав Подолян,</h3>
+                <div class="team__card-post">телемаркетолог</div>
+                <p class="team__card-desc">
+                  Есть люди, которые продадут песок бедуинам в&nbsp;пустыне и&nbsp;воду утопающим, 
+                  и&nbsp;Владислав&nbsp;&mdash; один из&nbsp;них.
+                </p>
+              </div>
+            </div>
+            <div class="team__card team__card--s">
+              <div class="team__card-photo"><img src="img/team/muraz.jpg" width="105" height="105"></div>
+              <div class="team__card-bio">
+                <h3 class="team__card-name">Леся Мурзаева,</h3>
+                <div class="team__card-post">менеджер проектов</div>
+                <p class="team__card-desc">
+                  Когда классических решений недостаточно, а&nbsp;рекламный бюджет несколько меньше, 
+                  чем у&nbsp;стройки &laquo;Зенит-Арены&raquo;, в&nbsp;дело вступает Леся&nbsp;&mdash; 
+                  специалист по&nbsp;креативу. Созданные ею&nbsp;проекты похожи на&nbsp;яркий цветник 
+                  посреди серых городских будней.
+                </p>
+              </div>
+            </div>
+            <div class="team__card team__card--s">
+              <div class="team__card-photo"><img src="img/team/black.jpg" width="105" height="105"></div>
+              <div class="team__card-bio">
+                <h3 class="team__card-name">Лиза Суаридзе,</h3>
+                <div class="team__card-post">телемаркетолог</div>
+                <p class="team__card-desc">Талантлива во&nbsp;всём, своей улыбкой любого скептика превращает в&nbsp;оптимиста.</p>
+              </div>
+            </div>
+            <div class="team__card team__card--s">
+              <div class="team__card-photo"><img src="img/team/trufan.jpg" width="105" height="105"></div>
+              <div class="team__card-bio">
+                <h3 class="team__card-name">Кирилл Труфанов,</h3>
+                <div class="team__card-post">менеджер проектов</div>
+                <p class="team__card-desc">
+                  Мастер аналитики, цифр и&nbsp;глубокого изучения любого необходимого для работы 
+                  вопроса&nbsp;&mdash; Кирилл&nbsp;&mdash; наш специалитст в&nbsp;области интернет-маркетинга 
+                  и&nbsp;цифровой рекламы. Самые современные методики, только актуальная информация 
+                  и&nbsp;обдуманные решения. Ваша интернет-реклама принесёт необходимый результат.
+                </p>
+              </div>
+            </div>
+            <div class="team__card team__card--s">
+              <div class="team__card-photo"><img src="img/team/mamchitz.jpg" width="105" height="105"></div>
+              <div class="team__card-bio">
+                <h3 class="team__card-name">Евгения Мамчиц,</h3>
+                <div class="team__card-post">телемаркетолог</div>
+                <p class="team__card-desc">
+                  Удивительно, сколько информации может вложить Женя в&nbsp;30-секундный 
+                  телефонный разговор. Всем&nbsp;бы так!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section address" id="address">
+      <div class="address__wrapper">
+        <h2 class="section__header address__header">Где можно получить кайф от сотрудничества?</h2>
+        <dl class="address__content">
+          <dt class="address__def">В нашем офисе</dt>
+          <dd class="address__desc">
+            Санкт-Петербург, ул. Алтайская, д. 3, офис 404
+            Зайти в гости можно по будням, с 9<sup>30</sup> до 18<sup>00</sup>.
+          </dd>
+          <dt class="address__def">
+             По телефону <a class="address__tel" href="tel:+7124567890">+7 123 456-78-90</a></dt>
+          <dd class="address__desc">
+             Звонки принимаются в рабочее время:
+            с 9<sup>00</sup> до 19<sup>00</sup> ежедневно.
+          </dd>
+          <dt class="address__def">В e-mail переписке</dt>
+          <dd class="address__desc">Наша почта — inbox@trendmedia.ru. Не забудьте представиться!</dd>
+          <dt class="address__def">Через форму обратной связи</dt>
+          <dd class="address__desc">Мы свяжемся с вами в удобное время и обо всём договоримся.</dd>
+          <button class="btn address__btn">заказать звонок</button>
+        </dl>
+      </div>
+      <div id="map"></div>
+      <svg width="20" height="20" id="clip">
+        <defs>
+          <clipPath id="myClip">
+            <circle cx="1000" cy="500" r="300"></circle>
+          </clipPath>
+        </defs>
+      </svg>
+    </section>
+    <footer class="section footer">
+      <div class="footer__column footer__column--left">
+        <h3 class="footer__header">Быстрая навигация</h3>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link footer__link--main" href="#">Главная</a></li>
+            <li class="footer__item"> <a class="footer__link" href="#features">Виды рекламы</a></li>
+            <li class="footer__item"> <a class="footer__link" href="#slider">Портфолио</a></li>
+            <li class="footer__item"><a class="footer__link" href="#small">Малому бизнесу</a></li>
+            <li class="footer__item"><a class="footer__link" href="#stats">Статистика</a></li>
+            <li class="footer__item"><a class="footer__link" href="#codes">Принципы</a></li>
+            <li class="footer__item"><a class="footer__link" href="#team">Команда</a></li>
+            <li class="footer__item"><a class="footer__link" href="#address">Контакты</a></li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item footer__item--main"> <a class="footer__link footer__link--main" href="#features">Услуги</a>
+              <ul class="footer__inner-list">
+                <li class="footer__item"> <a class="footer__link" href="/inner.html">Реклама в&nbsp;метро</a></li>
+                <li class="footer__item"> <a class="footer__link" href="/inner.html">Реклама на транспорте</a></li>
+                <li class="footer__item"> <a class="footer__link" href="/inner.html">Oudtoor-реклама</a></li>
+                <li class="footer__item"> <a class="footer__link" href="/inner.html">Indoor-реклама и лифты</a></li>
+                <li class="footer__item"><a class="footer__link" href="/inner.html">BTL и&nbsp;рассылки</a></li>
+                <li class="footer__item"><a class="footer__link" href="/inner.html">Работа со&nbsp;СМИ</a></li>
+                <li class="footer__item"><a class="footer__link" href="/inner.html">Реклама в&nbsp;интернете</a></li>
+                <li class="footer__item"><a class="footer__link" href="/inner.html">Спецпроекты</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__column footer__column--right">
+        <p class="footer__header footer__header--company">Trend Media / 2017</p>
+        <dl class="footer__contacts">
+          <dt class="footer__contacts-title">Контакты</dt>
+          <dd class="footer__contacts-address">«Тренд Медиа» <br>
+            19606, Санкт-Петербург,<br>
+            Московский проспект, д. 212<br>
+            +7 812 490-76-08<br>
+            inbox@trendmedia.ru
+          </dd>
+        </dl>
+        <p class="footer__copyright">© Trend Media, 2017</p>
+      </div>
+    </footer>
+  </body>
+</html>
